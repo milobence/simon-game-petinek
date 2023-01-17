@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="hu" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Simon</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body class="game">
+  <h1 id="level-title">Válassz egy nehézségi szintet a kezdéshez!</h1>
+  <h2 class="message"></h2>
+  <div class="diff-container">
+    <div class="row">
+      <button id="easy" class="diff btn-diff tooltip">Könnyű<span class="tooltiptext">Élet: 5, <br> Bónusz élet: 5 szintenként, <br> Teljes sorozat megmutatása: végig</span></button>
+      <button id="survivor" class="diff btn-diff tooltip">Túlélő<span class="tooltiptext">Élet: 1, <br> Bónusz élet: nincs, <br>Teljes sorozat megmutatása: végig</span></button>
+    </div>
+    <div class="row">
+      <button id="medium" class="diff btn-diff tooltip">Közepes<span class="tooltiptext">Élet: 3, <br> Bónusz élet: 8 szintenként, <br>Teljes sorozat megmutatása: 10. szintig</span></button>
+      <button id="time-1" class="diff btn-diff tooltip">Időfutam 1.<span class="tooltiptext">Kezdeti idő: 3:00, <br> Bónusz idő: szint*2mp, <br>Könnyű szint.</span></button>
+    </div>
+    <div class="row">
+      <button id="hard" class="diff btn-diff tooltip">Nehéz<span class="tooltiptext">Élet: 3, <br> Bónusz élet: 10 szintenként, <br>Teljes sorozat megmutatása: csak életvesztéskor</span></button>
+      <button id="time-2" class="diff btn-diff tooltip">Időfutam 2.<span class="tooltiptext">Kezdeti idő: 7:00, <br> Bónusz idő: nincs, <br>Könnyű szint.</span></button>
+    </div>
+    <div class="row">
+      <button id="random" class="diff btn-diff tooltip">Random<span class="tooltiptext">Élet: 3, <br> Bónusz élet: 5 szintenként, <br>Teljesen véletlenszerű sorozat minden körben.</span></button>
+      <button id="memory" class="diff btn-diff tooltip">Memóriajáték<span class="tooltiptext">Élet: 5, <br> Bónusz élet: nincs, <br>Teljesen véletlenszerű 6 hosszú sorozat minden körben.</span></button>
+    </div>
+    <div class="row">
+      <button class="diff btn-diff btn-rules" onclick="window.open('szabaly.html');">Szabályok</button>
+    </div>
+  </div>
+
+  <div class="button-container">
+    <div class="row">
+
+      <button id="green" class="btn green">
+
+      </button>
+
+      <button id="red" class="btn red">
+
+      </button>
+    </div>
+
+    <div class="row">
+
+      <button id="yellow" class="btn yellow">
+
+      </button>
+      <button id="blue" class="btn blue">
+
+      </button>
+
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="index.js"></script>
+
+</body>
+
+</html>

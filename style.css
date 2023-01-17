@@ -1,0 +1,217 @@
+/* index.html */
+
+/* body */
+
+.game {
+  text-align: center;
+  background-color: #011FFF;
+}
+
+
+/* h1 */
+
+#level-title, #rules {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  3%;
+  color: #fff;
+}
+
+
+/* h2*/
+
+.message {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+  margin: 3%;
+  color: #fff;
+}
+
+
+/* difficulty container */
+
+.diff-container {
+  margin: auto;
+}
+
+.diff {
+  font-family: 'Press Start 2P', cursive;
+  margin: 2%;
+  display: inline-block;
+  border: 10px solid black;
+}
+
+.btn-diff {
+  height: 50px;
+  width: 40%;
+  margin: 1%;
+}
+
+.btn-rules {
+  height: 150px;
+  width: 150px;
+  border-radius: 20%;
+  margin-top: 3%;
+}
+
+
+/* tooltips */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -150px;
+
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* button container */
+
+.button-container {
+  display: none;
+  width: 50%;
+  margin: auto;
+
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 175px;
+  width: 175px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+
+/* game over */
+
+.error {
+  background-color: red;
+  opacity: 0.8;
+}
+
+
+/* buttons */
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+
+/* for pressing a button */
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+
+
+/* szabaly.html */
+
+/* body */
+
+.rule {
+  background-color: #011F3F;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  margin: 5%;
+  font-size: 1.2rem;
+}
+
+.list-item {
+  margin: 15px;
+}
+
+.diff-list {
+  list-style-type: none;
+}
+
+
+/* media query for the mobile version */
+
+@media screen and (max-width: 600px) {
+  
+  /* h1 */
+
+  #level-title {
+    font-size: 6vw;
+  }
+
+  #rules {
+    font-size: 5vw;
+  }
+
+  /* h2 */
+
+  .message {
+    font-size: 5vw;
+  }
+
+  /* index.html - buttons */
+
+  .btn-diff {
+    height: 8vh;
+    width: 35vw;
+    margin: 2vh;
+    border-radius: 0;
+    font-size: 2.75vw;
+  }
+
+  .btn-rules {
+    margin-top: 5vh;
+  }
+
+  .btn {
+    height: 15vh;
+    width: 15vh;
+    margin: 2vh;
+  }
+
+}

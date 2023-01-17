@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hu" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Simon - játékszabályok</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body class="rule">
+
+    <h1 id="rules">Játékszabályok</h1>
+    <ol class="rules-list">
+      <li class="list-item rules-list-item">A játék kezdéséhez szintet kell választani. A jelenleg elérhető nehézségi szintek:</li>
+    </ol>
+    <ul class="diff-list">
+      <li class="list-item diff-list-item">Könnyű: A játékos 5 élettel kezdi a játékot, minden ötödik szint után új életet kap, valamint minden szint elején megjelenik a teljes sorozat.</li>
+      <li class="list-item diff-list-item">Közepes: A játékos 3 élettel kezdi a játékot, minden nyolcadik szint után új életet kap, valamint 10. szintig minden szint elején megjelenik a teljes sorozat. </li>
+      <li class="list-item diff-list-item">Nehéz: A játékos 3 élettel kezdi a játékot, minden tizedik szint után új életet kap, valamint a játékos minden szintnél csak az utolsó gombot látja.</li>
+      <li class="list-item diff-list-item">Random: A játékos 3 élettel kezdi a játékot, minden ötödik szint után új életet kap, viszont a játékos minden szinten egy teljesen random generált sorozatot kap.</li>
+      <li class="list-item diff-list-item">Túlélő: A játék hasonlít a könnyű nehézségi szintre, annyi különbséggel, hogy a játékosnak 1 élete van és nem is kap játék közben többet.</li>
+      <li class="list-item diff-list-item">Időfutam 1.: A játékosnak kezdetben 3 perc áll rendelkezésre, minden sikeres szint után annyiszor kap 2 másodpercet a játékos, ahányadik szintet sikerrel vette (pl.: a 16. szint után 32 mp-et). Végtelen élet áll rendelkezésre, ha lejár az idő, akkor véget ér a játék.</li>
+      <li class="list-item diff-list-item">Időfutam 2.: Hasonló, mint az időfutam 1., kezdetben 7 perc áll rendelkezésre, de nincs bónusz idő. A játék véget ér, ha lejár az idő.</li>
+      <li class="list-item diff-list-item">Memória: A játékos 5 élettel kezdi a játékot és minden szinten 6 hosszú sorozatokat kell helyesen visszaadni. Vajon mennyire tud a játékos figyelni?</li>
+    </ul>
+    <ol class="rules-list" start="2">
+      <li class="list-item rules-list-item">A játékos feladata, hogy minden szinten az éppen aktuális szekvenciát tökéletesen adja vissza.</li>
+      <li class="list-item rules-list-item">Amennyiben a játékos rossz gombra kattint, úgy veszít egy életet. Ekkor, nehézségi szinttől függetlenül, a program megmutatja az éppen aktuális sorozatot.</li>
+      <li class="list-item rules-list-item">Ha a játékos elveszti az összes életét, akkor a játék véget ér.</li>
+      <li class="list-item rules-list-item">Új játékot tetszőleges nehézségi szint választásával lehet kezdeni.</li>
+    </ol>
+    <p>Jó játékot!</p>
+
+</body>
+
+</html>
